@@ -1,4 +1,4 @@
-/* HOME, ABOUT, TABLE, CONTACT  */
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
 
 * {
@@ -239,4 +239,89 @@ tfoot td {
   font-weight: 600;
 }
 
+/* CONTACT PAGE  */
+/* HEADER  */
+
+.contact-header {
+  border: 1px solid black;
+}
+
+
+/* MAIN  */
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-section {
+  background-color:#f3b122;
+  border-radius: 7px;
+  margin: 3%;
+  padding: 3%;
+  width: 50%;
+}
+
+.contact-main h2 {
+  text-align: center;
+  color: #000080;
+  text-shadow: 1px 1px white;
+}
+
+
+.contact-main ul {
+  list-style: none;
+  border: 1px solid lightgray;
+  margin: 3%;
+  padding: 3%;
+  background-color: rgb(238, 234, 234);
+}
+
+.contact-main li {
+  margin: 3%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="select"],
+input[type="email"],
+input[type="date"],
+input[type="time"]
+{
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+input[type="submit"],
+input[type="reset"]
+{
+ 
+  font-size: 15px;
+  line-height: 1.5;
+  width: 30%;
+  padding: 2%;
+}
+
+select {
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+label {
+  font-weight: 800;
+  color:#000080;
+}
+
+.submit-ul li {
+  display: flex;
+  justify-content: center;
+}
+
+::placeholder {
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <!-- NAVIGATION  -->
+  <nav>
+    <ul>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="table.html">TABLE</a></li>
+      <li><a href="contact.html" target="_blank">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER  -->
+  <header class="contact-header">
+    <h1>Moon Trip Project <span class="page-color">(CONTACT PAGE)</span> &#127752; </h1>
+  </header>
+
+  <!-- MAIN  -->
+  <main class="contact-main">
+    <section class="contact-section">
+      <form action="Thankyou.html" method="post" autocomplete="off">
+        <h2>Registration for Moon Trip</h2>
+
+        <ul>
+          <h3>*Contact Information</h3>
+          <li>
+            <label for="name">Full Name</label>
+          </li>
+          <li>
+            <input type="text" name="name" placeholder="Harry Porter" required>
+          </li>
+          <li>
+            <label for="email">Email Address</label>
+          </li>
+          <li>
+            <input type="email" name="email" placeholder="harry@hogwarts.com" required>
+          </li>
+          </ul>
+
+          <ul>
+            <h3>*Preparation for Moon Trip </h3>
+            <li>
+              <label for="number">How many times have you travelled to Moon?</label>
+            </li>
+            <li>
+              <input type="number" name="number" min="0" max="100">
+            </li>
+            <li>
+              <label for="membership">Membership Status</label>
+            </li>
+            <li>
+              <input type="radio" name="membership" value="bronze">Bronze &nbsp;
+              <input type="radio" name="membership" value="Silver">Silver &nbsp;
+              <input type="radio" name="membership" value="Gold">Gold &nbsp;
+              <input type="radio" name="membership" value="Diamond">Diamond
+            </li>
+            <li>
+              <label for="activity-option">Moon Activity for Free</label>
+            </li>
+            <li>
+              <select name="activity-option">
+                <optgroup label="Energetic-Activity">
+                  <option>Jogging at the Moon Park</option>
+                  <option>Swimming in the Moon Lake</option>
+                </optgroup>
+                <optgroup label="Relaxing-Activity">
+                  <option>Hot Spa using Moon stone</option>
+                  <option>Music Concert by Moon Orchestra</option>
+                </optgroup>
+              </select>
+            </li>
+            <li>
+              <label for="date">Moon Trip - Departure Date</label>
+            </li>
+            <li>
+              <input type="date" name="date" min="2022-03-20">
+            </li>
+            <li>
+              <label for="time" name="date">Moon Trip - Departure Time</label>
+            </li>
+            <li>
+              <input type="time" name="time">
+            </li>
+            <li>
+              <label for="inquiry">Any inquiry</label>
+            </li>
+            <li>
+              <textarea cols="55" rows="10" placeholder="Please leave any inquiry if you have.">
+
+              </textarea>
+            </li>
+          </ul>
+          
+          <ul class="submit-ul">
+            <li>
+              <input type="submit" name="submit" value="Submit">
+              <input type="reset" name="reset" value="Reset">
+            </li>
+          </ul>
+
+        
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER  -->
+  <footer>
+    <p>Copyright &copy; 2022 . APRIL LEE . All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
