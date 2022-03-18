@@ -1,4 +1,6 @@
 
+/* ALL PAGES  */
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
 
 * {
@@ -13,7 +15,6 @@ body {
   align-items: center;
 }
 
-/* NAVIGATION  */
 nav {
   background-color: #000080;
   width: 80%;
@@ -39,36 +40,6 @@ nav a:hover {
   color: #f3b122 ;
 }
 
-/* HEADER  */
-header {
-  width: 80%;
-  height: 45vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header > video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  position: relative;
-  z-index: 0;
-}
-
-header > h1 {
-  position: absolute;
-  z-index: 1;
-  color: #000080;
-  font-family:'Fredoka', sans-serif;
-  text-shadow: 1px 1px white;
-}
-
-.page-color {
-  color: #C5FCEF;
-  font-weight: 100;
-}
 
 main {
   width: 80%;
@@ -83,6 +54,40 @@ footer {
   justify-content: center;
   align-items: center;
   font-family:'Fredoka', sans-serif;
+}
+
+.page-color {
+  color: #C5FCEF;
+  font-weight: 100;
+}
+
+/* HOME PAGE  */
+/* HEADER  */
+
+header {
+  width: 80%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: relative;
+  z-index: 0;
+}
+
+header h1 {
+  position: absolute;
+  z-index: 1;
+  color: #000080;
+  font-family:'Fredoka', sans-serif;
+  text-shadow: 1px 1px white;
+  font-size: 45px;
 }
 
 /* HOME PAGE  */
@@ -141,10 +146,9 @@ footer {
   background-color: #000080;
   margin-top: 4%;
   padding: 2%;
-}
-
-.readmore-bar {
   color: #C5FCEF;
+  display: flex;
+  justify-content: space-between;
 }
 
 .readmore-bar a {
@@ -164,17 +168,13 @@ header > img {
   z-index: 0;
 }
 
+/* ABOUT PAGE  */
+/* MAIN  */
+
 .about-main {
   display: flex;
   justify-content: space-evenly;
-}
-
-/* MAIN  */
-
-.about-main{
-  display: flex;
   text-align: justify;
-  justify-content: space-evenly;
 }
 
 .about-main h2 {
@@ -187,7 +187,6 @@ header > img {
   margin: 2%;
   background-color: #daf5ef;
   padding: 3%;
-
 }
 
 .about-main img {
@@ -203,32 +202,12 @@ header > img {
   background-color: rgb(241, 173, 24);
 }
 
-.table-main {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2%;
-}
+/* TABLE PAGE  */
+/* MAIN  */
 
-.table-main  {
-  color: #000080;
-  text-shadow: 1px 1px white;
-}
-
-.cost-table {
-  margin: 3%;
-}
-
-.cost-table, th, td {
-  border:1px solid rgb(204, 204, 204);
-  border-collapse: collapse;
-}
 
 tr, th, td { 
   padding: 1%; 
- 
 }
 
 th {
@@ -239,15 +218,83 @@ tfoot td {
   font-weight: 600;
 }
 
+.table-main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  color: #000080;
+  text-shadow: 1px 1px white;
+}
+
+.cost-table {
+  margin: 3%;
+  width: 100%;
+}
+
+.cost-table, th, td {
+  border:1px solid rgb(204, 204, 204);
+  border-collapse: collapse;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 /* CONTACT PAGE  */
 /* HEADER  */
 
 .contact-header {
-  border: 1px solid black;
+  border: 3px solid orange;
+}
+
+/* CONTACT PAGE  */
+/* MAIN  */
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"]
+{
+  font-size: 18px;
+  line-height: 1.5;
+  width: 100%;
+  border: 0px;
+  padding: 1%;
 }
 
 
-/* MAIN  */
+input[type="submit"],
+input[type="reset"]
+{
+ 
+  font-size: 18px;
+  line-height: 1.5;
+  width: 30%;
+  padding: 2%;
+  border: 0px;
+  background-color: #000080;
+  color: #f3b122;
+  margin: 1%;
+  font-weight: 600;
+}
+
+select, textarea {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 100%;
+  border: 0px;
+  padding: 1%;
+}
+
+label {
+  font-weight: 800;
+  color:#000080;
+}
+
 .contact-main {
   display: flex;
   justify-content: center;
@@ -282,38 +329,6 @@ tfoot td {
   margin: 3%;
 }
 
-input[type="text"],
-input[type="number"],
-input[type="select"],
-input[type="email"],
-input[type="date"],
-input[type="time"]
-{
-  font-size: 15px;
-  line-height: 1.5;
-  width: 100%;
-}
-
-input[type="submit"],
-input[type="reset"]
-{
- 
-  font-size: 15px;
-  line-height: 1.5;
-  width: 30%;
-  padding: 2%;
-}
-
-select {
-  font-size: 15px;
-  line-height: 1.5;
-  width: 100%;
-}
-
-label {
-  font-weight: 800;
-  color:#000080;
-}
 
 .submit-ul li {
   display: flex;

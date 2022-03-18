@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/CSS/style.css">
   <title>Contact</title>
+  <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
@@ -28,19 +28,19 @@
   <!-- MAIN  -->
   <main class="contact-main">
     <section class="contact-section">
-      <form action="Thankyou.html" method="post" autocomplete="off">
+      <form action="" method="post" autocomplete="off">
         <h2>Registration for Moon Trip</h2>
 
         <ul>
-          <h3>*Contact Information</h3>
+          <h3>[Contact Information]</h3>
           <li>
-            <label for="name">Full Name</label>
+            <label for="name">Full Name*</label>
           </li>
           <li>
             <input type="text" name="name" placeholder="Harry Porter" required>
           </li>
           <li>
-            <label for="email">Email Address</label>
+            <label for="email">Email Address*</label>
           </li>
           <li>
             <input type="email" name="email" placeholder="harry@hogwarts.com" required>
@@ -48,27 +48,31 @@
           </ul>
 
           <ul>
-            <h3>*Preparation for Moon Trip </h3>
+            <h3>[Preparation for Moon Trip]</h3>
             <li>
-              <label for="number">How many times have you travelled to Moon?</label>
+              <label for="number">How many times have you travelled to Moon?*</label>
             </li>
             <li>
-              <input type="number" name="number" min="0" max="100">
+              <input type="number" name="number" min="0" max="100" required>
             </li>
             <li>
-              <label for="membership">Membership Status</label>
+              <label for="membership">Membership Status*</label>
             </li>
             <li>
-              <input type="radio" name="membership" value="bronze">Bronze &nbsp;
-              <input type="radio" name="membership" value="Silver">Silver &nbsp;
-              <input type="radio" name="membership" value="Gold">Gold &nbsp;
-              <input type="radio" name="membership" value="Diamond">Diamond
+              <input type="radio" name="membership" value="bronze" required>
+              Bronze &nbsp;&nbsp;&nbsp;
+              <input type="radio" name="membership" value="Silver" required>
+              Silver &nbsp;&nbsp;&nbsp;
+              <input type="radio" name="membership" value="Gold" required>
+              Gold &nbsp;&nbsp;&nbsp;
+              <input type="radio" name="membership" value="Diamond" required>
+              Diamond &nbsp;&nbsp;&nbsp;
             </li>
             <li>
-              <label for="activity-option">Moon Activity for Free</label>
+              <label for="activity-option">Moon Activity for Free*</label>
             </li>
             <li>
-              <select name="activity-option">
+              <select name="activity-option" required>
                 <optgroup label="Energetic-Activity">
                   <option>Jogging at the Moon Park</option>
                   <option>Swimming in the Moon Lake</option>
@@ -80,22 +84,22 @@
               </select>
             </li>
             <li>
-              <label for="date">Moon Trip - Departure Date</label>
+              <label for="date">Moon Trip - Departure Date*</label>
             </li>
             <li>
-              <input type="date" name="date" min="2022-03-20">
+              <input type="date" name="date" min="2022-03-20" required>
             </li>
             <li>
-              <label for="time" name="date">Moon Trip - Departure Time</label>
+              <label for="time" name="date">Moon Trip - Departure Time*</label>
             </li>
             <li>
-              <input type="time" name="time">
+              <input type="time" name="time" required>
             </li>
             <li>
               <label for="inquiry">Any inquiry</label>
             </li>
             <li>
-              <textarea cols="55" rows="10" placeholder="Please leave any inquiry if you have.">
+              <textarea name="inquiry" cols="55" rows="10" placeholder="Please leave any inquiry if you have.">
 
               </textarea>
             </li>
@@ -103,12 +107,10 @@
           
           <ul class="submit-ul">
             <li>
-              <input type="submit" name="submit" value="Submit">
-              <input type="reset" name="reset" value="Reset">
+              <input type="submit" value="SUBMIT">
+              <input type="reset" value="RESET">
             </li>
           </ul>
-
-        
       </form>
     </section>
   </main>
