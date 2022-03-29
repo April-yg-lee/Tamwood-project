@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+@media {
+  
+  body {
+    background-color: #282828 ;
+    color: white;
+}
+
+
+/* CONTACT  */
+
+.mint {
+  color: #4FFBDF;
+}
+
+.contact {
+  padding: 5%;
+}
+
+.contact h2 {
+  color: #4FFBDF;
+  text-shadow: 0.5px 0.5px white;
+  text-align: center;
+}
+
+.contact div {
+  padding: 1%;
+}
+
+.contact div:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact div:not(:last-child) > input {
+  padding: 2%;
+}
+
+.contact div:last-child {
+  padding: 3% 0%;
+  width: 100%;
+  text-align: center;
+}
+
+.contact div:last-child > input {
+  padding: 2%;
+  width: 30%;
+}
+
+.contact textarea {
+  padding: 2%;
+}
+
+
+footer {
+  background-color: #240090;
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding-bottom: 2%;
+}
+
+
+
+
+
+}
