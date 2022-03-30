@@ -1,81 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media {
-  
   body {
-    background-color: #282828 ;
+    background-color: #282828;
     color: white;
-}
+  }
+
+  section h2 {
+    color: #4ffbdf;
+    text-shadow: 0.5px 0.5px white;
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 3%;
+    font-family: 'Titillium Web', sans-serif;
+
+  }
+  .skills,
+  .education,
+  .contact {
+    padding: 5%;
+  }
+
+  /* SKILLS  */
+
+  .skills {
+    text-align: center;
+  }
+
+  .skills h3 {
+    font-weight: 600;
+    color: #a386fa;
+  }
+
+  .skills article {
+    padding-top: 3%;
+    padding-bottom: 10%;
+  }
+
+  .hard-skills img {
+    width: 30%;
+    padding: 1%;
+  }
+
+  .soft-skills p {
+    font-size: 1.3em;
+  }
+
+  
+
+  /* EDUCATION  */
+
+  .card {
+    background-color: #282828;
+    text-align: center;
+    color: white;
+    padding-bottom: 2%;
+  }
+
+  .btn {
+    background-color: #240090;
+    color: white;
+  }
+
+  .btn:visited {
+    color: white;
+  }
+
+  .tam-card {
+    background-color: white;
+  }
 
 
-/* CONTACT  */
+  /* CONTACT  */
 
-.mint {
-  color: #4FFBDF;
-}
+  .mint {
+    color: #4ffbdf;
+  }
 
-.contact {
-  padding: 5%;
-}
+  .contact div {
+    padding: 1%;
+  }
 
-.contact h2 {
-  color: #4FFBDF;
-  text-shadow: 0.5px 0.5px white;
-  text-align: center;
-}
+  .contact div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+  }
 
-.contact div {
-  padding: 1%;
-}
+  .contact div:not(:last-child) > input {
+    padding: 2%;
+  }
 
-.contact div:not(:last-child) {
-  display: flex;
-  flex-direction: column;
-}
+  .contact div:last-child {
+    padding: 3% 0%;
+    width: 100%;
+    text-align: center;
+  }
 
-.contact div:not(:last-child) > input {
-  padding: 2%;
-}
+  .contact div:last-child > input {
+    padding: 2%;
+    width: 30%;
+  }
 
-.contact div:last-child {
-  padding: 3% 0%;
-  width: 100%;
-  text-align: center;
-}
+  .contact textarea {
+    padding: 2%;
+  }
 
-.contact div:last-child > input {
-  padding: 2%;
-  width: 30%;
-}
+  /* FOOTER  */
+  footer {
+    background-color: #240090;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-.contact textarea {
-  padding: 2%;
-}
-
-
-footer {
-  background-color: #240090;
-  padding: 3%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-footer div {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-  padding-bottom: 2%;
-}
-
-
-
-
-
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding-bottom: 2%;
+  }
 }
