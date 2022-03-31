@@ -29,6 +29,77 @@
     padding: 5%;
   }
 
+  /* PROJECTS  */
+
+  .projects {
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    row-gap: 7vh; */
+  }
+  
+  .project-list {
+    padding-bottom: 10%;
+  }
+
+  .project-list aside {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .project-list .project-content {
+    width: 50vh;
+    height: 30vh;
+    padding: 2%;
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+  }
+
+  .project-list .project-content:hover   {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-list h6 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .project-content a {
+    background-color: #240090;
+    color: white;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  
+  .project-pic {
+    width: 50vh;
+    height: 30vh;
+  }
+
+
+
+
   /* SKILLS  */
 
   .skills {
