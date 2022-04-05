@@ -8,7 +8,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width:300px) {
+
+  nav {
+    display: none;
+    height: 0;
+  }
+
   body {
     background-color: #282828;
     color: white;
@@ -226,6 +236,7 @@
 
   /* CONTACT  */
 
+
   .mint {
     color: #4ffbdf;
   }
@@ -294,6 +305,10 @@
     font-size: 50px;
   }
 
+  nav {
+    display: none;
+  }
+
   /* HEADER  */
   .header p {
     font-size: 86px;
@@ -307,11 +322,11 @@
   /* PROJECTS  */
 
   .project-list h6, p {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .project-list a {
-    font-size: 25px;
+    font-size: 15px;
   }
 
 
@@ -330,4 +345,118 @@
   footer img {
     width: 50px;
   }
+}
+
+@media (min-width:1000px) {
+
+  /* NAVIGATION  */
+  nav {
+    width: 100%;
+    height: 6vh;
+    background-color:#240090;
+  
+  }
+
+  nav ul {
+    margin: 0%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    justify-content: space-around;
+    position: fixed;
+
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  nav a:hover {
+    color:#4ffbdf;
+  }
+
+
+  /* ABOUT ME  */
+
+.aboutme-basket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutme img {
+  display: block;
+  width: 30%;
+}
+
+.aboutme-article {
+  width: 60%;
+  padding-top: 3%;
+}
+
+.aboutme h3 {
+  font-size: 27px;
+}
+
+  .aboutme p {
+    font-size: 20px;
+  }
+
+  /* PROJECTS  */
+
+  .project-basket {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .project-list {
+    width: 45%;
+  }
+
+  /* SKILLS  */
+
+  .skills-basket {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hard-skills, .soft-skills {
+    width: 45%;
+  }
+
+  .hard-skills img {
+    width: 30%;
+  }
+
+  /* EDUCATION  */
+  .card-basket {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  /* CONTACT  */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact form {
+    width: 55%;
+  }
+
+
+
+
 }
