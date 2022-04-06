@@ -12,33 +12,19 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width:300px) {
+body {
+  background-color: #282828;
+  color: white;
+}
 
-  nav {
-    display: none;
-    height: 0;
-  }
-
-  body {
-    background-color: #282828;
-    color: white;
-  }
-
-  section h2 {
-    color: #4ffbdf;
-    text-shadow: 0.5px 0.5px white;
-    text-align: center;
-    font-size: 45px;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-family: 'Titillium Web', sans-serif;
-  }
-
-  .skills,
-  .education,
-  .contact {
-    padding: 5%;
-  }
+section h2 {
+  color: #4ffbdf;
+  text-shadow: 0.5px 0.5px white;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-family: 'Titillium Web', sans-serif;
+}
 
   h3 {
     font-weight: 600;
@@ -46,10 +32,26 @@ html {
   }
 
   hr {
-    border: 2px solid ;
+    border: 2px solid #4ffbdf;
     opacity: 1;
     width: 100%;
-    color: #4ffbdf;
+  }
+
+@media (min-width:300px) {
+
+  nav {
+    display: none;
+    height: 0;
+  }
+
+  section h2 {
+    font-size: 40px;
+  }
+
+  .skills,
+  .education,
+  .contact {
+    padding: 5%;
   }
 
   /* ABOUT ME  */
@@ -71,7 +73,6 @@ html {
   }
 
 
-
   /* HEADER  */
 
   header {
@@ -90,7 +91,6 @@ html {
 
   header div {
     width: 80%;
-
     position: absolute;
   }
 
@@ -140,8 +140,8 @@ html {
   }
 
   .project-list .project-content {
-    width: 50vh;
-    height: 30vh;
+    width: 80%;
+    height: 40vh;
     padding: 2%;
 
     position: absolute;
@@ -149,6 +149,10 @@ html {
     opacity: 0;
     transition: all 0.4s ease-in-out;
     z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .project-list .project-content:hover   {
@@ -156,15 +160,13 @@ html {
     transform: translate(0);
   }
 
-  .project-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .project-list h6 {
+    font-size: 2vh;
+    font-weight: 600;
   }
 
-  .project-list h6 {
-    font-size: 1.3rem;
-    font-weight: 600;
+  .project-list p {
+    font-size: 1.5vh;
   }
 
   .project-content a {
@@ -174,16 +176,13 @@ html {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.5vh;
   }
 
-  
   .project-pic {
-    width: 50vh;
-    height: 30vh;
+    width: 80%;
+    height: 40vh;
   }
-
-
-
 
   /* SKILLS  */
 
@@ -208,7 +207,6 @@ html {
   }
 
   
-
   /* EDUCATION  */
 
   .card {
@@ -216,6 +214,10 @@ html {
     text-align: center;
     color: white;
     padding-bottom: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 
@@ -229,8 +231,9 @@ html {
     color: white;
   }
 
-  .tam-card {
+  .tam-card, .KGU-card {
     background-color: white;
+    width: 80%;
   }
 
 
