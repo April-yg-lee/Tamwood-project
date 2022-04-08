@@ -20,7 +20,8 @@ body {
 
 @media (min-width:300px) {
   
-  section h2 {
+  /* NORMALIZE  */
+  section > h2 {
     color: #4ffbdf;
     text-shadow: 0.5px 0.5px white;
     text-align: center;
@@ -39,7 +40,7 @@ body {
       opacity: 1;
       width: 100%;
     }
-  
+
    nav {
      display: none;
      height: 0;
@@ -53,7 +54,8 @@ body {
   }
 
   /* ABOUT ME  */
-  .aboutme {
+
+  #aboutme {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +75,7 @@ body {
 
   /* HEADER  */
 
-  header {
+  #header {
     background-image: url("/Images/header-pic.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -83,17 +85,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
   }
 
   header div {
     width: 80%;
     position: absolute;
-  }
-
-  .header-2nd-sentence {
-    display: none;
   }
 
   .header-1st-sentence {
@@ -103,21 +100,21 @@ body {
     line-height: 1;
   }
 
+  .header-2nd-sentence {
+    display: none;
+  }
+
   .web-developer {
     font-size: 35px;
     color:#a386fa;
     text-shadow: 1px 1px white;
   }
 
-
   /* PROJECTS  */
 
-  .projects {
+  #projects {
     color: white;
     padding: 5%;
-    /* display: flex;
-    flex-direction: column;
-    row-gap: 7vh; */
   }
   
   .project-list {
@@ -183,10 +180,9 @@ body {
 
   /* SKILLS  */
 
-  .skills {
+  #skills {
     text-align: center;
   }
-
 
   .skills article {
     padding-top: 3%;
@@ -216,7 +212,6 @@ body {
     align-items: center;
   }
 
-
   .btn {
     background-color: #240090;
     color: white;
@@ -234,7 +229,6 @@ body {
 
 
   /* CONTACT  */
-
 
   .mint {
     color: #4ffbdf;
@@ -268,7 +262,6 @@ body {
     padding: 2%;
     width: 30%;
     border-radius: 5px;
-
   }
   
   .contact textarea {
@@ -277,6 +270,7 @@ body {
   }
 
   /* FOOTER  */
+
   footer {
     background-color: #240090;
     padding: 3%;
@@ -295,7 +289,7 @@ body {
 
 @media (min-width:700px) {
 
-  
+  /* NORMALIZE  */
   section h2 {
     font-size: 60px;
   }
@@ -307,6 +301,8 @@ body {
   .skills h3, .aboutme h3 {
     font-size: 40px;
   }
+
+  /* NAVIGATION  */
 
   nav {
     display: none;
@@ -323,7 +319,6 @@ body {
 
 
   /* PROJECTS  */
-
   
   .project-basket {
     display: flex;
@@ -345,7 +340,6 @@ body {
 
 
   /* SKILLS  */
-
 
   .soft-skills p {
     font-size: 40px;
@@ -373,8 +367,6 @@ body {
   .contact form {
     width: 80%;
   }
-
-
 
   /* FOOTER  */
   footer {
@@ -428,32 +420,31 @@ body {
 
   }
 
-
   /* ABOUT ME  */
 
-.aboutme-basket {
+  .aboutme-basket {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  }
 
-.aboutme img {
-  display: block;
-  width: 30%;
-}
+  .aboutme img {
+    display: block;
+    width: 30%;
+  }
 
-.aboutme-article {
-  width: 60%;
-  padding-top: 3%;
-}
+  .aboutme-article {
+    width: 60%;
+    padding-top: 3%;
+  }
 
-.aboutme h3 {
-  font-size: 27px;
-}
+  .aboutme h3 {
+    font-size: 27px;
+  }
 
   .aboutme p {
     font-size: 20px;
-  }
+    }
 
   /* SKILLS  */
 
@@ -464,6 +455,10 @@ body {
 
   .hard-skills, .soft-skills {
     width: 45%;
+  }
+
+  .hard-skills img:hover, .soft-skills p:hover {
+    transform: scale(1.5,1.5);
   }
 
   .hard-skills img {
